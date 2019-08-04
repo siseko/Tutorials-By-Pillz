@@ -1,9 +1,11 @@
-// function greeting() {
-//     var name = 
-// }
+function greeting() {
+    var name = document.getElementById("usersname").value;
+    document.getElementById("namevalue").innerHTML = name;
+}
 
 
 function add() {
+    greeting();
     var num1 = parseInt(document.getElementById("number1").value);
     var num2 = parseInt(document.getElementById("number2").value);
     sum = num1 + num2;
@@ -11,6 +13,7 @@ function add() {
 }
 
 function multiply() {
+    greeting();
     var num1 = parseInt(document.getElementById("number1").value);
     var num2 = parseInt(document.getElementById("number2").value);
     product = num1 * num2;
@@ -18,6 +21,7 @@ function multiply() {
 }
 
 function divide() {
+    greeting();
     var num1 = parseInt(document.getElementById("number1").value);
     var num2 = parseInt(document.getElementById("number2").value);
     quotient = num1 / num2;
@@ -26,6 +30,7 @@ function divide() {
 
 
 function subtract() {
+    greeting();
     var num1 = parseInt(document.getElementById("number1").value);
     var num2 = parseInt(document.getElementById("number2").value);
     difference = num1 - num2;
