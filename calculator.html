@@ -9,19 +9,49 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="calculator.css">
     </head>
     <body>
-        <div class="calculators-section">
-            What is yout name: <input type="text" id="user">
-            Enter the First Number: <input type="text" id="num1">
-            Enter the Second Number:<input type="text" id="num2">
-            <input type="button" value="Add">
-            <input type="button" value="Subtract">
-            <input type="button" value="Divide">
-            <input type="button" value="Multiply">
+        <div class="container">
+        <form>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="usersname">What is yout name:</label>
+            </div>
+            <div class="col-75">
+                 <input type="text" id="usersname" name="fullname" placeholder="Type your name here.">
+            </div>
+        </div> 
+
+        <div class="row">
+                <div class="col-25">
+                    <label for="number1">Enter the First Number:</label>
+                </div>
+                <div class="col-75">
+                     <input type="text" id="number1" name="num1" placeholder="Enter the first number">
+                </div>
+        </div> 
+
+        <div class="row">
+                <div class="col-25">
+                    <label for="number1">Enter the Second Number:</label>
+                </div>
+                <div class="col-75">
+                     <input type="text" id="number2" name="num2" placeholder="Enter the Second number">
+                </div>
+        </div> 
+            <input type="button" value="Add" onclick="add()">
+            <input type="button" value="Subtract" onclick="subtract()">
+            <input type="button" value="Divide" onclick="divide()">
+            <input type="button" value="Multiply" onclick="multiply()">
         </div>
+    </form>
+</div>
+<div>
+    <p>The answer is: <span id>54</span></p>
+</div>
         
-        <script src="" async defer></script>
+        <script type="text/javascript" src="calculator.js" ></script>
     </body>
 </html>
