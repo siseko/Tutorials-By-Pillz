@@ -23,13 +23,13 @@ for(var i = 0; i < arrayedSentenceWithLongWord.length; i++ ){
         longestWordValue = arrayedSentenceWithLongWord[i];
     }
 }
-    return [longestWordValue, longestWordNumber ];
+    return {longestWordValue: longestWordValue, longestWordNumber: longestWordNumber};
 }
 
 function printMEaningFulSentence(){
     var valuesArrray = findTheLongestWord();
-    var longestWordItself = valuesArrray[0];
-    var numberOfCharsInWord = valuesArrray[1];
+    var longestWordItself = valuesArrray.longestWordValue;
+    var numberOfCharsInWord = valuesArrray.longestWordNumber;
     var meaningfulSentence = "The longest word has is " + longestWordItself + "and it contains " + numberOfCharsInWord + " characters."
     
     console.log(meaningfulSentence);
